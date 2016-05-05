@@ -67,7 +67,6 @@ Columns for `data/students.csv` are as follows (priorities are collected with ma
 ## Calculating the matches
 
 ```
-$ bundle install
 $ ruby match.rb
 ```
 
@@ -89,5 +88,6 @@ FROM=*Email address*
 Emails will be sent based on the data in `output.csv`.
 
 ```
+$ bundle install
 $ bundle exec ruby email_match.rb
 ```
