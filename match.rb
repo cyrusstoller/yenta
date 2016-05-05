@@ -1,8 +1,5 @@
 require 'csv'
-
-require_relative "student.rb"
-require_relative "alum.rb"
-require_relative "score_service.rb"
+Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
 def main
   announce "Parsing Alums..."
