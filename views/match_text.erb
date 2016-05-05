@@ -1,0 +1,21 @@
+Hi <%= @name %>,
+ 
+Thank you again for participating. We are so excited to see such strong enthusiasm from students and alumni alike, and are looking forward to the many rich and meaningful experiences to come.
+  
+- You will find your personalized mentor match below.
+- Please reach out to them, as they are expecting your email/call.
+- Please fill out this survey upon reaching out, indicating that you have done so.
+
+<%= ENV['REACHOUT_FORM'] %>
+
+- Enjoy! (we have uploaded again here ideas for early conversation, and the program overview)
+
+<%= ENV['IDEAS_DOC'] %>
+  
+----------------------
+
+Your Match:
+
+<% @attr.each do |a| %>
+  <%= a[0] %>: <%= a[1] %>
+<% end %>
